@@ -4,19 +4,16 @@ namespace my
 	{
 		int temp = arr[0];
 		int i;
-		if (istrue == true)
-		{	
-			for (i=0;i<count;i++)
-			{
+		for (i=0;i<count;i++)
+		{
+			if (istrue == true)
+			{	
 				if (temp < arr[i])
 				{
 					temp = arr[i];
 				}
 			}
-		}
-		else
-		{
-			for(i=0;i<count;i++)
+			else
 			{
 				if (temp > arr[i])
 				{
