@@ -12,13 +12,16 @@ int main()
 	int d;
 	//主体
 	cout << "下面来玩个游戏" << endl;
+	cin.get();
 	cout << "现在电脑生成了一个数" << endl;
+	cin.get();
 	cout << "不管它为啥生成" << endl;
+	cin.get();
 	cout << "亲，来猜猜是什么数字吧！" ;
+	cin.get();
 	while (c != d)
 	{
 		cin >> d;
-
 		if (d > c)
 		{
 			cout << "比正确答案大了\n";
