@@ -1,2 +1,4 @@
 #CPP
 *.cpp~
+#Head
+*.h~
