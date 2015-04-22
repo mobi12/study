@@ -2,3 +2,6 @@
 *.cpp~
 #Head
 *.h~
+#Shell
+*.sh
+*.sh~
