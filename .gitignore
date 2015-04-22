@@ -5,3 +5,5 @@
 #Shell
 *.sh
 *.sh~
+#Eclipes
+.*
