@@ -6,4 +6,6 @@
 *.sh
 *.sh~
 #Eclipes
-.*~
+.*
+#MD
+*.md~
