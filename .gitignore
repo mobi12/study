@@ -9,3 +9,9 @@
 .*
 #MD
 *.md~
+#C
+*.c~
+#Assembly
+*.s~
+*.o
+
