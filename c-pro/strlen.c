@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+//这个程序可以运行但是有个问题
 int main()
 {
 	char str1[5];
