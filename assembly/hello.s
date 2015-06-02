@@ -1,9 +1,18 @@
+.include "linux.s"
+
 .section .data
-	data_str:
-		.ascii "hello~\0"
+	data_h:
+		.string "hello,world\n"
+		len = .-data_h
 .section .text
 .globl _start
 	_start:
+		movl $len, %edx
+		movl $data_h, %ecx
+		movl $STDOUT, %ebx
+		movl $4, %eax
+		int $0x80
+
+		movl $0, %ebx
 		movl $1, %eax
-		movl data_str, %ebx
-int $0x80
+		int $0x80
