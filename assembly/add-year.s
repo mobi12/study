@@ -38,6 +38,25 @@ movl $0101, %ecx
 movl $0666, %edx
 int $LINUX_SYSCALL
 movl %eax, ST_OUTPUT_DESCRIPTOR(%ebp)
+#检测%eax是否为负值
+#非负继续,负数返回错误码
+cmpl $0 , %eax
+jl continue_processing
+
+#发送错误信息
+.section .data
+no_open_file_code:
+.ascii "0001: \0"
+no_open_file_msg:
+.ascii "Can't Open Input File\0"
+
+.section .text
+pushl $no_open_file_msg
+pushl $no_open_file_code
+call error_exit
+
+continue_processing:
+#程序其余部分
 
 loop_begin:
 pushl ST_INPUT_DESCRIPTOR(%ebp)
