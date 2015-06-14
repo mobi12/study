@@ -1,3 +1,4 @@
+.code32
 .section .data
 .section .text
 .globl _start

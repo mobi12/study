@@ -1,3 +1,4 @@
+.code32
 .section .data
 data_my:
 	.byte 3	#试一下其他的大小

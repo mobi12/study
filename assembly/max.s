@@ -1,3 +1,4 @@
+.code32
 .section .data
 
 data_items:

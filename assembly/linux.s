@@ -1,3 +1,4 @@
+.code32
 #linux常量定义
 .equ SYS_EXIT, 1
 .equ SYS_READ, 3

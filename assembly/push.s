@@ -1,3 +1,4 @@
+.code32
 #栈
 .section .data
 .section .text

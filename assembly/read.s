@@ -1,3 +1,5 @@
+.code32
+.code32
 .include "linux.s"
 .include "record-def.s"
 #从文件描述符读取信息

@@ -1,3 +1,4 @@
+.code32
 .include "linux.s"
 .include "record-def.s"
 #写入给定文件描述符

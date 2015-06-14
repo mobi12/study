@@ -1,3 +1,4 @@
+.code32
 #退出程序并返回状态值5
 .section .data
 .section .text

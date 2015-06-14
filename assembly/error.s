@@ -1,3 +1,4 @@
+.code32
 .include "linux.s"
 .equ ST_ERROR_CODE, 8
 .equ ST_ERROR_MSG, 12

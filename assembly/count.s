@@ -1,3 +1,4 @@
+.code32
 #对字符计数直到遇到空字符
 .type count_chars, @function
 .globl count_chars

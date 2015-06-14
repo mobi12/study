@@ -1,3 +1,4 @@
+.code32
 .include "linux.s"
 .section .data
 
