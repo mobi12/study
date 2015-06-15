@@ -1,4 +1,3 @@
-.code32
 .include "linux.s"
 .globl write_newline
 .type write_newline, @function

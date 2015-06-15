@@ -1,4 +1,3 @@
-.code32
 .section .data
 
 firststring:

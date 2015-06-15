@@ -1,4 +1,3 @@
-.code32
 .section .data
 #没有全局数据
 .section .text

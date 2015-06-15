@@ -1,4 +1,3 @@
-.code32
 .section .data
 	data_it:
 		.long 1,3,5
