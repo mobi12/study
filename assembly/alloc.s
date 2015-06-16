@@ -9,6 +9,7 @@ heap_begin:
 .equ HDR_SIZE_OFFSET, 4
 .equ UNAVAILABLE, 0
 .equ AVAILABLE, 1
+.equ SYS_BRK, 45
 .equ LINUX_SYSCALL, 0X80
 
 .section .text
