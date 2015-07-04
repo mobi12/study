@@ -1,5 +1,6 @@
 #CPP
 *.cpp~
+cpp
 #Head
 *.h~
 #Shell
@@ -11,6 +12,7 @@
 *.md~
 #C
 *.c~
+cpro
 #Assembly
 *.s~
 *.o
