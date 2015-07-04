@@ -2,9 +2,6 @@
 *.cpp~
 #Head
 *.h~
-#Shell
-*.sh
-*.sh~
 #Eclipes
 .*
 #MD
