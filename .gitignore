@@ -16,4 +16,5 @@ cpro
 #Assembly
 *.s~
 *.o
-
+#Complies out
+a.out
