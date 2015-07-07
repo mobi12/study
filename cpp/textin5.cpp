@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdio>
 
 using namespace std;
 
@@ -7,7 +8,7 @@ int main(void)
 	int ch;
 	int count = 0;
 
-	while ((ch = cin.get()) != -1)
+	while ((ch = cin.get()) != EOF)
 	{
 		cout.put(char (ch));
 		++count;
