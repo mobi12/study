@@ -16,7 +16,7 @@ int main()
 	while (Max > i && cin >> fish[i])
 	{
 		if (++i < Max)
-		cout << "鱼#" << i + 1 << ": ";
+		cout << "鱼#" << i + 1<< ": ";
 	}
 
 	double total = 0.0;
