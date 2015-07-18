@@ -10,18 +10,34 @@ int main()
 {
 	ofstream outPut;
 	ifstream inPut;
-	outPut.open("toy2.txt");
-	inPut.open("toy2.txt");
-	menu();
 	int choice;
-	cin >> choice;
+	menu();
 
-	switch (choice)
-	{
-		case 1 : cout << "呵呵" << endl;break;
-		case 2 : outPut << "我去" << endl;break;
-		case 3 : cout << "退出鸟" << endl;break;
-		default : cout << "没有" << choice << "选项";
+	while (cin >> choice)
+	{	
+		if (choice == 1)
+		{
+			cout << "我呵呵你一脸" << endl;
+			break;
+		}
+		else if (choice == 2)
+		{
+			outPut.open("toy2.txt");
+			outPut << "我去" << endl;
+			inPut.open("toy2.txt");
+			break;
+		}
+		else if (choice == 3)
+		{	
+			cout << "我还是退了吧" << endl;
+			break;
+		}	
+
+		else
+		{	
+			cout << choice << "不是选项" << endl;
+			menu();
+		}
 	}
 
 	if (inPut.good())
