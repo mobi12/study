@@ -9,7 +9,7 @@ int main()
 	double fish[Max];
 	cout << "输入鱼的重量" << endl;
 	cout << "你最大可以输入" << Max << "次" << endl;
-	cout << "鱼#1："	
+	cout << "鱼#1：";	
 
 	int i = 0;
 
