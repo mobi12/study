@@ -29,8 +29,7 @@ int main()
 
 void n_chars(char c,int n)
 {
-	int i = 0;
-	while (i++ < n)
+	while (n-- > 0)
 		cout << c;
 	cout << endl;
 }
