@@ -8,15 +8,18 @@ int main()
 {
 	int times;
 	char ch;
+	
+	cout << "Enter a character: ";
+	cin >> ch;
 
 	while (ch != 'q')
 	{
 		cout << "Enter an integer: ";
 		cin >> times;
+		n_chars(ch,times);
 		cout << "Enter another character or press the"
 			"q-key to quit: ";
 		cin >> ch;
-		n_chars(ch,times);
 	}
 	cout << "THE VALUE OF TIMES IS " << times << ".\n";
 	cout << "Bye\n";
