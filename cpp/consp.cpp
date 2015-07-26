@@ -12,5 +12,11 @@ int main()
 	pt = &sage;
 	cout << "pt的新值：" << *pt << endl;
 
+	const int * const pf = &sage;
+	cout << *pf << endl;
+
+	int * const pfd = &sage;
+	cout << *pfd << endl;
+
 	return 0;
 }
