@@ -13,3 +13,6 @@
 *.o
 #Complies out
 a.out
+#Test Text
+*.txt
+*.txt~
