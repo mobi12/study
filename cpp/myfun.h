@@ -1,7 +1,11 @@
 #include <iostream>
 
-namespace my
+namespace smy
 {
+	//定义一个常量
+	
+	extern const double Pi;
+	
 	//比较大小函数
 	int getMax(int arr[0],int count,bool istrue)
 	{
