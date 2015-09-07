@@ -1,6 +1,6 @@
 #include <iostream>
 #include "myfun.h"
-
+//使用extern在myfun.h里声明了一个常量
 using namespace std;
 using namespace smy;
 
