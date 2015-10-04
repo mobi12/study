@@ -16,3 +16,5 @@ a.out
 #Test Text
 *.txt
 *.txt~
+#Tags
+tags
