@@ -3,9 +3,15 @@
 int main()
 {
 	char a[10];
+	char b;
+	char c;
 
-	scanf("%5s", &a);
-	printf("%s", a);
+	scanf("%s", &a);
+	getchar();
+	printf("%s\n", a);
+
+	scanf("%c,%*c", &b, &c);
+	printf("%c%c\n", b, c);
 
 	return 0;
 }
