@@ -1,3 +1,4 @@
+#ifndef MY_FUN_H_
 #include <iostream>
 
 namespace smy
@@ -40,3 +41,5 @@ namespace smy
 			<< "3)我都不知道该干嘛，退了算了\n";
 	}
 }
+
+#endif
