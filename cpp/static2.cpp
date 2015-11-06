@@ -1,25 +1,24 @@
 #include <iostream>
+#include <string>
 
-const int ArSize = 10;
+//修改源代码，将数组换成string对象
 
-void strcount(const char * str);
+using namespace std;
+
+void strcount(string str);
 
 int main()
 {
-    using namespace std;
-    char input[ArSize];
-    char next;
+    string input;
 
     cout << "Enter a line: " << endl;
-    cin.get(input, ArSize);
-    while (cin)
+    getline(cin, input);
+
+    while (input != "")
     {
-         cin.get(next);
-         while (next != '\n')
-            cin.get(next);
-         strcount(input);
-         cout << "Enter next line (empty line to quit): " << endl;
-         cin.get(input, ArSize);
+        strcount(input);
+        cout << "Enter next line (empty line to quit): " << endl;
+        cin >> input;
     }
 
     cout << "Bye" << endl;
@@ -27,15 +26,13 @@ int main()
     return 0;
 }
 
-void strcount(const char * str)
+void strcount(string str)
 {
-     using namespace std;
-     static int total = 0;
-     int count = 0;
+    static int total = 0;
+    int count = 0;
 
-     cout << "\"" << str << "\" contains ";
-     while (*str++)
-      count++;
+    cout << "\"" << str << "\" contains ";
+    count = str.size();
     total += count;
     cout << count << " characters" << endl;
     cout << total << " characters total" << endl;
