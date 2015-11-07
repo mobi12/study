@@ -1,8 +1,6 @@
 #include "sales.h"
 
-using SALES::setSales;
-using SALES::setSales;
-using SALES::showSales;
+using namespace SALES;
 
 int main()
 {
