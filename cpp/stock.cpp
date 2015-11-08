@@ -18,7 +18,7 @@ class Stock
         void sell(int num, double price);
         void update(double price);
         void show();
-}
+};
 
 void Stock::acquire(const char *co, int n, double pr)
 {
@@ -29,7 +29,7 @@ void Stock::acquire(const char *co, int n, double pr)
     {
         std::cerr << "Number of shares can't be negative."
             << company << " shares set to 0.\n";
-        share = 0;
+        shares = 0;
     }
     else
         shares = n;
@@ -86,7 +86,26 @@ void Stock::show()
      using std::endl;
 
      cout << "Company: " << company
-         << "Shares: " << shares << endl;
+         << "Shares: " << shares << endl
          << " Share Price: $" << share_val
          << " Total Worth: $" << total_val << endl;
+}
+
+int main()
+{
+     using std::cout;
+     using std::ios_base;
+
+     Stock stock1;
+    stock1.acquire("NanoSmart", 20, 12.5);
+    cout.setf(ios_base::fixed);
+    cout.precision(2);
+    cout.setf(ios_base::showpoint);
+    stock1.show();
+    stock1.buy(15, 18.25);
+    stock1.show();
+    stock1.sell(400, 20.00);
+    stock1.show();
+
+     return 0;
 }
