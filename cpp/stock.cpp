@@ -13,6 +13,7 @@ class Stock
              total_val = shares * share_val;
         }
     public:
+        Stock::~Stock();
         void acquire(const char *co, int n, double pr);
         void buy(int num, double price);
         void sell(int num, double price);
@@ -89,6 +90,15 @@ void Stock::show()
          << "Shares: " << shares << endl
          << " Share Price: $" << share_val
          << " Total Worth: $" << total_val << endl;
+}
+
+Stock::~Stock()
+{
+    using std::cout;
+    using std::endl;
+
+    shares = 0;
+    cout << "Bye" << endl;
 }
 
 int main()
