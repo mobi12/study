@@ -34,12 +34,12 @@ int main()
 			case 'P':
 			case 'p': if (st.isempty())
 						cout << "stack already empty\n";
-					else 
-					{
-						st.pop(po);
-						cout << "PO #" << po << " popped\n";
-					}
-					break;
+					  else 
+					  {
+						 st.pop(po);
+						 cout << "PO #" << po << " popped\n";
+					  }
+					  break;
 		}
 		
 		cout << "Please enter A to add a purchase order, \n"
