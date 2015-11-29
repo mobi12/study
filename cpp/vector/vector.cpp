@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <cmath>
 #include "vector.h"
 
@@ -131,11 +132,14 @@ namespace VECTOR
 	std::ostream & operator <<(std::ostream & os, const Vector & v)
 	{
 		if (v.mode == 'r')
+		{	
 			os << "(x, y) = (" << v.x << ", " << v.y << ") ";
+			
+		}
 		else if (v.mode == 'p')
 		{
 			os << "(m, g) = (" << v.mag << ", "
-				<< v.ang * Rad_to_deg << ") ";
+					<< v.ang * Rad_to_deg << ") ";
 		}
 		else
 			os << "Vector object mode is invalid";
