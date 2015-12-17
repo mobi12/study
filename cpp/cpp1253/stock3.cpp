@@ -1,29 +1,34 @@
 #include <iostream>
 #include <cstring>
-#include "stock2.h"
+#include "stock3.h"
 
 Stock::Stock()
 {
-	strcpy(company, "no name");
+	company = '\0';
 	shares = 0;
 	share_val = 0.0;
 	total_val = 0.0;
 }
 
-Stock::Stock(const char * co, int n, double pr)
+Stock::Stock(const char * co, double pr)
 {
-	std::strncpy(company, co, 29);
-	company[29] = '\0';
-	shares = n;
+	company = new char[strlen(co)];
+	std::strcpy(company, co);
+	shares = strlen(co);
 	share_val = pr;
 
-	if (n < 0)
+	if (strlen(co) < 0)
 	{
 		std::cerr << "Number of shares can't be negative."
 			<< company << " shares set to 0.\n";
 		shares = 0;
 	}
 	set_tot();
+}
+
+Stock::~Stock()
+{
+	delete [] company;
 }
 
 void Stock::buy(int num, double price)
@@ -64,21 +69,21 @@ void Stock::update(double price)
     set_tot();
 }
 
-void Stock::show() const
-{
-    using std::cout;
-    using std::endl;
-
-    cout << "Company: " << company;
-    cout << " Shares: " << shares << endl;
-    cout << " Shares Price: $" << share_val
-        << " Total Worth: $" << total_val << endl;
-}
-
 const Stock & Stock::topval(const Stock & s) const
 {
      if (s.total_val > total_val)
          return s;
      else
          return *this;
+}
+
+//友元函数
+std::ostream & operator <<(std::ostream & os, const Stock & st)
+{
+	os << "Company: " << st.company;
+	os << " Shares: " << st.shares << std::endl;
+	os << " Shares Price: $" << st.share_val
+		<< " Total Worth: $" << st.total_val << std::endl;
+	
+	return os;
 }
