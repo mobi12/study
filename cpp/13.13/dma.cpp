@@ -1,6 +1,7 @@
 #include <cstring>
 #include "dma.h"
 
+//baseDMA
 baseDMA::baseDMA(const char *l, int r)
 {
 	label = new char[std::strlen(l) + 1];
@@ -40,6 +41,7 @@ std::ostream & operator <<(std::ostream & os, const baseDMA & rs)
 	return os;
 }
 
+//lacksDMA
 lacksDMA::lacksDMA(const char *c, const char *l, int r) : baseDMA(l, r)
 {
 	std::strncpy(color, c, 39);
@@ -60,6 +62,7 @@ std::ostream & operator <<(std::ostream & os, const lacksDMA & ls)
 	return os;
 }
 
+//hasDMA
 hasDMA::hasDMA(const char *s, const char *l, int r) : baseDMA(l, r)
 {
 	style = new char[std::strlen(s) + 1];
