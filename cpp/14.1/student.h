@@ -8,13 +8,13 @@
 class Student
 {
     private:
-        typedef std::valarry<double> ArrayDb;
+        typedef std::valarray<double> ArrayDb;
         std::string name;
         ArrayDb scores;
         std::ostream & arr_out(std::ostream & os) const;
     public:
         Student() : name("Null Student"), scores() {}
-        Student(const char std::string & s) : name(s), scores() {}
+        Student(const std::string & s) : name(s), scores() {}
         explicit Student(int n) : name("Nully"), scores(n) {}
         Student(const std::string & s, int n) : name(s), scores(n) {}
         Student(const std::string & s, const ArrayDb & a) : name(s), scores(a) {}
@@ -28,5 +28,5 @@ class Student
         friend std::istream & getline(std::istream & is, Student & stu);
         friend std::ostream & operator <<(std::ostream & os, const Student & stu);
 };
-
+    
 #endif
