@@ -1,7 +1,7 @@
 #include <iostream>
 #include "stackpt.h"
 
-template <template <class t> class Thing>
+template <template <typename t> typename Thing>
 class Crab
 {
     private:
