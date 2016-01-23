@@ -44,7 +44,7 @@ int main()
         pg = GetOne();
         pg->Speak();
         if (ps = dynamic_cast<Superb *>(pg))
-        ps->Say();
+            ps->Say();
     }
     
     return 0;
