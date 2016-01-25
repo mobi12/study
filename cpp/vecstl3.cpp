@@ -31,7 +31,7 @@ int main()
     cout << "Sorted by title:\nRating\tBook\n";
     for_each(books.begin(), books.end(), ShowReview);
     
-    sort(books.begin(), books.end(), ShowReview);
+    sort(books.begin(), books.end(), worseThan);
     cout << "Sorted by rating:\nRating\tBook\n";
     for_each(books.begin(), books.end(), ShowReview);
     
