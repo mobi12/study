@@ -16,7 +16,7 @@ int main()
     
    cout <<  thread::hardware_concurrency() << endl;
    cout << this_thread::get_id() << endl;
-    thd.join();
+   thd.join();
     
     return 0;
 }
