@@ -18,3 +18,8 @@ a.out
 *.txt~
 #Tags
 tags
+#VS2015
+*.exe
+*.config
+*.csproj
+*.sln
