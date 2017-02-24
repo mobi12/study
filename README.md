@@ -10,4 +10,3 @@
 ###主要用处是存c++ primer plus(不知道名字写错没)上的试题部分
 ###嗯
 ###以上！！
-##win10 iso下载链接：https://software-download.microsoft.com/pr/Win10_1607_Chinese(Simplified)_x64.iso?t=a6e25297-9508-4183-8861-37a105375f37&e=1474537872&h=9e16fa1dd60b1c0c735dbebe14602b57
